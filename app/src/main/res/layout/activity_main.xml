@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Room Database"
+        android:textAllCaps="true"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_marginTop="68dp"
+        android:ems="10"
+        android:hint="NAME"
+
+        app:layout_constraintEnd_toEndOf="@+id/tv_logo"
+        app:layout_constraintHorizontal_bias="0.52"
+        app:layout_constraintStart_toStartOf="@+id/tv_logo"
+        app:layout_constraintTop_toBottomOf="@+id/tv_logo" />
+
+    <EditText
+        android:id="@+id/surname"
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:layout_marginTop="125dp"
+        android:hint="SURNAME"
+
+        app:layout_constraintEnd_toEndOf="@+id/name"
+        app:layout_constraintStart_toStartOf="@+id/name"
+        app:layout_constraintTop_toTopOf="@+id/name" />
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:layout_marginTop="125dp"
+        android:hint="AGE"
+
+        app:layout_constraintStart_toStartOf="@+id/surname"
+        app:layout_constraintTop_toTopOf="@+id/surname" />
+    <EditText
+        android:id="@+id/salary"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:ems="10"
+        android:layout_marginTop="125dp"
+        android:hint="SALARY"
+
+        app:layout_constraintEnd_toEndOf="@+id/surname"
+        app:layout_constraintTop_toTopOf="@+id/surname" />
+
+    <Button
+        android:id="@+id/setup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="set up"
+        app:layout_constraintEnd_toEndOf="@+id/salary"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="@id/age"
+        app:layout_constraintTop_toBottomOf="@id/age" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
